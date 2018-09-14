@@ -37,9 +37,6 @@ dependencies {
 
   spinnaker.group "bootWeb"
 
-  // TODO(dibyom): Move this to spinnaker-dependencies
-//  compile 'org.springframework.hateoas:spring-hateoas:0.23.0.RELEASE'
-
   compile spinnaker.dependency("korkWeb")
   compile spinnaker.dependency("korkStackdriver")
   compile spinnaker.dependency("korkSwagger")
