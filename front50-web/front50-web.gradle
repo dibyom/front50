@@ -32,7 +32,6 @@ configurations.all {
 
 dependencies {
   compile project(":front50-core")
-  compile project(":front50-pipelines")
   compile project(":front50-migrations")
 
   spinnaker.group "bootWeb"
