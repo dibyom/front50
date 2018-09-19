@@ -14,12 +14,16 @@
  * limitations under the License.
  */
 
+repositories {
+  mavenLocal()
+}
+
 dependencies {
   compile project(":front50-core")
   compile 'io.reactivex:rxjava:1.0.10'
-
+  compile 'com.netflix.spinnaker.clouddriver:clouddriver-google-common:2.65.0-SNAPSHOT'
   spinnaker.group('google')
-  compile spinnaker.dependency('clouddriverGoogleCommon')
+//  compile spinnaker.dependency('clouddriverGoogleCommon')
   compile spinnaker.dependency("korkSecurity")
 
   testCompile project(":front50-test")

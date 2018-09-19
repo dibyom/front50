@@ -730,7 +730,6 @@ GcsStorageService implements StorageService {
                       String resource) {
       gcsSafeRetry.doRetry(operation,
                            resource,
-                           null,
                            Arrays.asList(500),
                            null,
                            maxWaitInterval,
